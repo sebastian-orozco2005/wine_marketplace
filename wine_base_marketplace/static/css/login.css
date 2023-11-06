@@ -1,0 +1,152 @@
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 1px;
+      background-image: url('../images/wines_background.jpg');
+  }
+  .login_form_container{
+      position: relative;
+      width: 500px;
+      height: 470px;
+      max-width: 500px;
+      max-height: 470px;
+      background: #460000;
+      border-radius: 50px 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      margin-top: 10rem;
+      font-family: 'Pacifico', cursive;
+  }
+  .login_form_container::before{
+      
+      position: absolute;
+      width: 170%;
+      height: 170%;
+      content: '';
+      background-image: conic-gradient(transparent, transparent, transparent, #f8feff);
+      animation: rotate_border 6s linear infinite;
+  
+  }
+  .login_form_container::after{
+      
+      position: absolute;
+      width: 170%;
+      height: 170%;
+      content: '';
+      background-image: conic-gradient(transparent, transparent, transparent, #f8feff);
+      animation: rotate_border 6s linear infinite;
+      animation-delay: -3s;
+  }
+  @keyframes rotate_border{
+      0%{
+          transform: rotate(0deg);
+      }
+      100%{
+          transform: rotate(360deg);
+      }
+  }
+  .login_form{
+      position: absolute;
+      content: '';
+      background-color: #460000;
+      border-radius: 50px 5px;
+      inset: 5px;
+      padding: 40px 40px;
+      z-index: 10;
+      color: #fff;
+  
+  } 
+  h2{
+      font-size: 40px;
+      font-weight: 600;
+      text-align: center;
+  }
+  .input_group{
+      margin-top: 40px;
+      position:relative;
+      display:flex;
+      align-items: center;
+      justify-content: start;
+      
+  }
+  .input_text{
+      width: 95%;
+      height: 30px;
+      background: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #fff;
+      font-size: 20px;
+      padding-left: 10px;
+      color: #fff;
+      font-family: 'Pacifico', cursive;
+  
+  }
+  ::placeholder{
+      font-size: 15px;
+      color: #fff;
+      letter-spacing: 1px;
+  
+  }
+  .fa{
+      font-size: 20px;
+  
+  }
+  #login_button{
+      position: relative;
+      width: 400px;
+      height: 40px;
+      transition: 1s;
+      margin-top: 70px;
+  
+  
+  }
+  #login_button button{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      z-index: 10;
+      cursor: pointer;
+      font-size: 22px;
+      letter-spacing: 2px;
+      border: 1px solid #fff;
+      border-radius: 50px;
+      background-color: #460000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Pacifico', cursive;
+      color: #fff;
+      transition: 0.5s;
+  }
+  #login_button button:hover{
+    background-color: #fff;
+    color: #460000;
+  }
+  .fotter {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+  
+  }
+  .fotter a{
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 18px;
+  }
+  .glowIcon {
+      text-shadow: 0 0 10px #fff;
+  
+  }
