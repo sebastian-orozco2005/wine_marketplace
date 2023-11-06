@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Login From</title>
+    <link
+      rel="stylesheet"
+      href="{% static 'css/errors/error_login.css'%}"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <img src="{%static 'images/wines_background.jpg'%}" alt=""> -->
+      <div class="login_form_container">
+        <div class="login_form">
+          <h2>Usuario no encontrado</h2>
+          <p>El usuario que se ha ingresado no se encuentra registrado porfavor registrate para entrar o ingresa con un usuario diferente.</p>
+          <div class="button_group" id="login_button">
+            <a href="/signup/">Sign up</a>
+          </div>
+          <div class="fotter">
+            <a>Forgot Password ?</a>
+            <a href="/login/">Log in</a>
+          </div>
+        </div>
+      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="{% static 'js/login.js'%}"></script>
+  </body>
+</html>
