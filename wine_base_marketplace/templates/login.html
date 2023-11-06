@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- <img src="{%static 'images/wines_background.jpg'%}" alt=""> -->
-    <form action="/signup/" method="post">
+    <form action="/login/" method="post">
       {% csrf_token %}
       <div class="login_form_container">
         <div class="login_form">
@@ -47,7 +47,7 @@
           </div>
           <div class="fotter">
             <a>Forgot Password ?</a>
-            <a>SingUp</a>
+            <a href="/signup/">SingUp</a>
           </div>
         </div>
       </div>

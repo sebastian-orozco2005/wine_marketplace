@@ -145,6 +145,7 @@
       text-decoration: none;
       cursor: pointer;
       font-size: 18px;
+      color: #fff;
   }
   .glowIcon {
       text-shadow: 0 0 10px #fff;
